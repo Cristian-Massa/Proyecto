@@ -1,0 +1,559 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Bg*/
+.Body-index{
+    background-color: #FF3CAC;
+    background-image: radial-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+    
+}
+
+.bg-cape{
+    z-index: -1;
+    width: 100%;
+    height: 100%;   
+}
+
+.bg{
+    z-index: -2;
+    position: fixed;
+    height: 100%;
+    opacity: 0.3;
+    filter: blur(6px);
+}
+
+/*Text*/
+
+.Title-index, .Text-index, .Titles, .Title, .P, .Title-Article{
+    color: white;
+}
+
+.Title-Article{
+    font-size: 35px;
+}
+
+.P{
+    font-size: 20px;
+}
+
+.Title-index{
+    font-size: 200%;
+    padding: 5%;
+}
+
+/*Nav*/
+
+.Nav-index ul{
+    list-style-type: none;
+}
+
+  /*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border: #123456 solid 3px;
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+    list-style-type: none;
+  }
+  
+  .respmenu {
+    color: white;
+    position: relative;
+    background: #123456;
+    min-height: 48px;
+  }
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+  /*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+
+/*Grids*/
+
+/*Index*/
+
+.Title-index{
+    grid-area: Title-index;
+}
+
+.Text-index{
+    grid-area: Text-index;
+}
+
+.Nav-index{
+    grid-area: Nav-index;
+}
+
+.Grid-index{
+    display: grid;
+    }
+
+.Logo-index{
+    grid-area: Logo-index;
+}
+
+.Section-index{
+    grid-area: Section-index;
+}
+
+.Block-footer-index{
+    grid-area: Footer-index;
+}
+
+/*Inicio*/
+
+.Header-inicio{
+    grid-area: Header-inicio;
+}
+
+.Section-inicio{
+    grid-area: Section-inicio;
+}
+
+/*ADN*/
+
+.faq1{
+    grid-area: faq1;
+}
+
+.faq2{
+    grid-area: faq2;
+}
+
+.faq3{
+    grid-area: faq3;
+}
+
+@media screen and (min-width: 320px) {
+
+
+    /*General Mobile*/
+
+    body{
+        background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+    }
+
+    .bg-cape{
+        z-index: -1;
+        width: 100%;
+        height: 100%;   
+    }
+
+    .bg{
+        z-index: -2;
+        position: fixed;
+        height: 100%;
+        opacity: 0.3;
+        filter: blur(6px);
+    }
+
+
+    /*Index Mobile*/
+
+    /*Bg*/
+
+    .Bg-index{
+        z-index: -2;
+        position: fixed;
+        height: 100%;
+        opacity: 0.3;
+        filter: blur(6px);
+    }
+
+    
+    .Cape-bg{
+        z-index: -1;
+        width: 100%;
+        height: 100%;       
+    }
+
+        /*Grid*/
+
+    .Grid-index{
+        grid-template-columns: auto;
+        grid-template-rows: 250px 600px 10%;
+        grid-template-areas: "Logo-index" "Section-index" "Footer-index";
+    }
+
+        /*Logo*/
+
+    .Logo-index{
+        border-radius: 50%;
+        border: rgb(254, 185, 63) 4px solid;
+        margin: 5% auto;
+
+    }
+
+        /*Title paragraph nav*/
+
+    .Section-index{
+
+        border-radius: 5%;
+        margin: 10% 2% 15% 2%;
+    }
+
+    .Title-index, .Text-index, .Nav-index{
+        text-align: center;
+    }
+
+    .Text-index{
+        margin-top: 10%;
+        font-size: 150%;
+    }
+
+    .Nav-index{
+        margin-top: 5%;
+    }
+
+    .Nav-index ul li{
+        padding: 7%;
+    }
+
+    .Boton-index{
+        border-radius: 15%;
+        background-color: transparent;
+        border: solid 4px #FFBE33;
+        font: bold;
+        color: white;
+    }
+    
+    .Boton1-index{
+        padding: 3% 5% 3% 5%;
+    }
+    
+    .Boton2-index{
+        padding: 3% 7% 3% 7%;
+    }
+    
+    .Boton3-index{
+        padding: 3% 9% 3% 9%;
+    }
+
+        /*Footer*/
+
+    .Block-footer-index{
+        background-color: black;
+        padding: 5%;
+        color: white;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-top: rgb(254, 185, 63) solid 4px;
+    }
+
+    /*Inicio*/
+
+    .Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(43, 2, 69);
+        padding: 1%;
+        border-bottom: 4px solid #FFBE33 ;
+    }
+    .Title-inicio{
+        display: none;
+    }
+
+    .Nav{
+        text-align: center;    
+    } 
+
+    .respmenu a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 2px solid #456789;
+        max-width: 200px;
+        background: #234567;
+        font-variant: small-caps;
+        text-shadow: 1px 1px black;
+      }
+
+    .Nav2{
+        display: none;
+    }
+
+    .Img{
+        border-top: #FFBE33 2px solid;
+        border-bottom: #FFBE33 2px solid;
+        margin: 3% 0 3% 0;
+    }
+
+    .Article{
+        margin: 1% 0 1% 0;
+    }
+
+    .Footer{
+        background: black;
+        padding: 2%;
+        position: fixed;
+        bottom: 0;
+        right: 0%;
+        left: 0;
+        color: white;
+        text-align: center;
+        border-top: #FFBE33 4px solid;
+    }
+
+    .Section-inicio{
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+
+    /*Horarios Android*/
+
+    .Section-horarios{
+        display: flex;
+        border: white 3px solid;
+        margin: 1% 1% 15% 1%;
+        justify-content: center;
+        
+    }
+
+    .Article-contactos1{
+        margin: 2%;
+        padding: 5%;
+        color: white;
+    }
+    
+    .Article-contactos2{
+        padding: 5%;
+    }
+
+    .Caja-de-texto{
+        width: 100%; /*segui con esto*/
+    }
+    
+    /*Acerca de nosotros*/
+
+    .grid-article-adn{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "faq1" "faq2" "faq3";
+        border-bottom: #FFBE33 4px solid;
+    }
+    
+    .faq1, .faq2, .faq3{
+        color: white;
+        margin: 3%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    /*Index pc*/
+
+
+        /*Grid*/
+
+        .Grid-index{
+            grid-template-columns: auto;
+            grid-template-rows: 250px 600px 10%;
+            grid-template-areas: "Logo-index" "Section-index" "Footer-index";
+        }
+    
+        .Section-index{
+            display: flex;
+            flex-direction: column;
+            border-radius: 5%;
+            margin: 10% 20% 5% 20%;
+        }
+
+            /*Logo*/
+    
+        .Logo-index{
+            margin-top: 5%;
+            border-radius: 50%;
+            border: rgb(254, 185, 63) 4px solid;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+    
+            /*Title paragraph nav*/
+    
+        .Title-index, .Text-index, .Nav-index{
+            text-align: center;
+        }
+
+        .Title-index{
+            font-size: 350%;
+        }
+    
+        .Text-index{
+            margin-top: 1%;
+            font-size: 150%;
+        }
+
+        .Nav-index ul li{
+            padding: 1%;
+        }
+
+        .Boton1-index, .Boton2-index, .Boton3-index{
+            list-style: none;
+        }
+
+        .Boton1-index{
+            padding: 1% 5% 1% 5%;
+        }
+        
+        .Boton2-index{
+            padding:1% 7% 1% 7%;
+        }
+        
+        .Boton3-index{
+            padding: 1% 9% 1% 9%;
+        }
+    
+            /*Footer*/
+    
+        .Block-footer-index{
+            padding: 1%;
+        }
+
+        /*Inicio PC*/
+
+    .respmenu, .Nav{
+        display: none;
+    }
+
+    .Nav2{
+        display: block;
+    }
+
+    .Nav2 ul li{
+        display: inline-block;
+        text-decoration: none;
+}
+
+.Nav2 ul li .nav-page2{
+        text-decoration: none;
+        color: white;
+    }
+
+    .Section-inicio{
+        margin-bottom: 5%;
+    }
+
+    /*ADN*/
+
+    .faq1,.faq2,.faq3{
+        margin: 1%;
+    }
+
+}
+@media screen and (min-width: 1372px){
+
+    /*Index pc*/
+
+    /*BG*/
+    .Bg-index{
+        z-index: -2;
+        position: fixed;
+        width: 100%;
+        object-fit: fill;
+        opacity: 0.3;
+        filter: blur(6px);
+    }
+
+        /*Grid*/
+
+        .Grid-index{
+            grid-template-columns: auto;
+            grid-template-rows: 250px 600px 10%;
+            grid-template-areas: "Logo-index" "Section-index" "Footer-index";
+        }
+    
+            /*Logo*/
+    
+        .Logo-index{
+            margin-top: 5%;
+            border-radius: 50%;
+            border: rgb(254, 185, 63) 4px solid;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+    
+            /*Title paragraph nav*/
+    
+        .Section-index{
+            border-radius: 5%;
+            margin: 5% 20% 5% 20%;
+        }
+    
+        .Title-index, .Text-index, .Nav-index{
+            text-align: center;
+        }
+
+        .Title-index{
+            font-size: 350%;
+        }
+    
+        .Text-index{
+            margin-top: 1%;
+            font-size: 150%;
+        }
+    
+        .Nav-index{
+            margin-top: 7%;
+        }
+    
+        .Nav-index ul li{
+            padding: 1%;
+        }
+    
+
+        .Boton1-index, .Boton2-index, .Boton3-index{
+            list-style: none;
+        }
+
+        .Boton1-index{
+            padding: 1% 5% 1% 5%;
+        }
+        
+        .Boton2-index{
+            padding:1% 7% 1% 7%;
+        }
+        
+        .Boton3-index{
+            padding: 1% 9% 1% 9%;
+        }
+    
+            /*Footer*/
+    
+        .Block-footer-index{
+            padding: 1%;
+        }
+}
