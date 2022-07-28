@@ -50,50 +50,6 @@
     list-style-type: none;
 }
 
-  /*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
-
-.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-    position: absolute;
-    box-sizing: border-box;
-    width: 48px;
-    height: 48px;
-    border: #123456 solid 3px;
-  }
-  
-  .respmenu .fa-bars, .respmenu .fa-times {
-    font-size: 48px;
-    pointer-events: none;
-  }
-  
-  .respmenu input[type="checkbox"] {
-    opacity: 0;
-    list-style-type: none;
-  }
-  
-  .respmenu {
-    color: white;
-    position: relative;
-    background: #123456;
-    min-height: 48px;
-  }
-  
-  .respmenu nav {
-    display: none;
-  }
-  
-  .respmenu input:checked ~ nav {
-    display: block;
-  }
-  
-  .respmenu input:checked ~ .fa-bars {
-    display: none;
-  }
-  
-  .respmenu input:not(:checked) ~ .fa-times {
-    display: none;
-  }
-
-  /*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
 
 /*Grids*/
 
@@ -150,6 +106,7 @@
 .faq3{
     grid-area: faq3;
 }
+
 
 @media screen and (min-width: 320px) {
 
@@ -367,12 +324,29 @@
     
     .faq1, .faq2, .faq3{
         color: white;
-        margin: 3%;
+        margin: 2%;
         text-align: center;
+    }
+
+    /*Contactos*/
+
+    .Section-contactos{
+        margin-bottom: 5%;
     }
 }
 
 @media screen and (min-width: 1024px){
+
+
+    /*bg*/
+
+    .bg{
+        z-index: -2;
+        position: absolute;
+        height: 100%;
+        opacity: 0.3;
+        filter: blur(6px);
+    }
 
     /*Index pc*/
 
