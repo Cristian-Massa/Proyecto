@@ -1,0 +1,93 @@
+.Text, .Titles{
+    color: white;
+}
+
+.Titles{
+    font: 400% bold;
+}
+
+.Text-index{
+    font: bold 300%;
+}
+
+.layer-bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;   
+}
+
+.video-bg{
+    z-index: -2;
+    position: fixed;
+    height: 100%;
+    opacity: 0.3;
+    filter: blur(2px);
+}
+
+.body-index{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    grid-template-rows: 1fr 2fr ;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+}
+
+.header-index{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Logo{
+    border-radius: 50%;
+    border: rgb(254, 185, 63) 4px solid;
+}
+
+.container{
+    width: 100vw;
+    justify-content: stretch;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 25% 25% 35% 10%;
+}
+
+.Title-index, .Slogan-index , .Nav-index, .Footer-index{
+    text-align: center;
+}
+
+.Nav-index Nav ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.Boton-index{
+    border-radius: 15%;
+    background-color: transparent;
+    border: solid 4px #FFBE33;
+    font: bold;
+    color: white;
+}
+
+.Boton1-index{
+    padding: 1% 3% 1% 3%;
+}
+
+.Boton2-index{
+    padding: 1% 3% 1% 3%;
+}
+
+.Boton3-index{
+    padding: 1% 3% 1% 3%;
+}
+
+.Footer-index{
+    background-color: black;
+    border-top:rgb(254, 185, 63) 4px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
