@@ -1,13 +1,22 @@
+    /*General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
 .Text, .Titles{
     color: white;
 }
 
 .Titles{
     font: 400% bold;
-}
-
-.Text-index{
-    font: bold 300%;
 }
 
 .layer-bg{
@@ -21,9 +30,26 @@
     z-index: -2;
     position: fixed;
     height: 100%;
-    opacity: 0.3;
     filter: blur(2px);
+    opacity: 0.3;
 }
+
+
+.Footer{
+    background-color: black;
+    opacity: 0.7;
+    border-top:rgb(254, 185, 63) 4px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Footer-pages{
+    padding: 3%;
+}
+
+    /*Index*/
 
 .body-index{
     display: grid;
@@ -31,7 +57,7 @@
     width: 100vw;
     justify-content: center;
     grid-template-rows: 1fr 2fr ;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+    background-color: transparent;
 }
 
 .header-index{
@@ -54,13 +80,17 @@
     grid-template-rows: 25% 25% 35% 10%;
 }
 
-.Title-index, .Slogan-index , .Nav-index, .Footer-index{
+.Title-index, .Slogan-index, .Nav-index, .Footer{
     text-align: center;
+}
+
+.Text-index{
+    font: bold 300%;
 }
 
 .Nav-index Nav ul li{
     list-style-type: none;
-    padding: 5px;
+    margin: 1%;
 }
 
 .Boton-index{
@@ -71,23 +101,81 @@
     color: white;
 }
 
+.Boton-index:hover{
+    border: solid 4px #784BA0;
+    color: #784BA0;
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
 .Boton1-index{
-    padding: 1% 3% 1% 3%;
+    padding: 1% 5% 1% 5%;
 }
 
 .Boton2-index{
-    padding: 1% 3% 1% 3%;
+    padding: 1% 6% 1% 6%;
 }
 
 .Boton3-index{
-    padding: 1% 3% 1% 3%;
+    padding: 1% 7% 1% 7%;
 }
 
-.Footer-index{
-    background-color: black;
-    border-top:rgb(254, 185, 63) 4px solid;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.acerca-de-nosotros-index{
+    text-decoration: none;
+    color: #FFBE33;
+}
+
+    /*Inicio*/
+
+    .body-inicio{
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        grid-template-rows: 1fr 2fr ;
+        background-color: transparent;
+        margin-bottom: 10%;
+    }
+
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        border-bottom: #FFBE33 4px solid;
+        background-color: #2B0245;
+    }
+
+    .nav-link{
+        color: #FFBE33;
+        font: bold;
+    }
+
+    .Logo-pages{
+        border-radius: 50%;
+        width: 100px;
+    }
+
+    .P{
+        text-align: justify;
+    }
+
+    .carousel{
+        display: flex;
+        margin: 5% 0 2% 0;
+        justify-content: center;
+        border-top: #FFBE33 2px solid;
+        border-bottom: #FFBE33 2px solid;
+    }
+    
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15%;
+    }
+
+
+@media screen (min-width: 480px) {
+
+}
+
+@media screen (min-width: 767px){
+
 }
