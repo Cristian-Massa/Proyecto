@@ -4,127 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/Style.css">
-    <title>Agencia Lapunta|Inicio</title>
+    <title>Agencia Lapunta|Contactos</title>
 </head>
 <main>
-    <body>
-           
+    <body class="body-pages">
+          
                             <!--Background de la pagina-->
 
-            <div class="bg-capa">
-            </div>
-            <video autoplay loop muted class="bg">
-                <source src="../Video/background.mp4" type="video/mp4">
-            </video>
-            <div class="Grid-inicio">
-                <header class="Header">
-                    <img src="../Image/Logo.png" alt="Logo" class="Logo">
-                    <h1 class="Title Title-inicio">La Punta</h1>
-            
-                    <div class="respmenu">
-                        <input type="checkbox">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times"></i>
-                    <nav class="Nav">
-                        <ul>
-                            <li class="nav-page"><a href="../pages/Inicio.html">Inicio</a></li>
-                            <li class="nav-page"><a href="../pages/Horarios.html">Horarios y Destinos</a></li>
-                            <li class="nav-page"><a href="../pages/contactos.html">Contactos</a></li>
-                            <li class="nav-page"><a href="../pages/acerca-de-nosotros.html">Acerca de nosotros</a></li>
-                        </ul>
-                        
-                    </nav>
-                    </div>
-                    <nav class="Nav2">
-                        <ul>
-                            <li class="nav-page2"><a href="../pages/Inicio.html">Inicio</a></li>
-                            <li class="nav-page2"><a href="../pages/Horarios.html">Horarios y Destinos</a></li>
-                            <li class="nav-page2"><a href="../pages/contactos.html">Contactos</a></li>
-                            <li class="nav-page2"><a href="../pages/acerca-de-nosotros.html">Acerca de nosotros</a></li>
-                        </ul>
-                        
-                    </nav>
-            
-                </header>
-                <section class="Section-contactos">
-            <!--Información del contacto ordenada por Departamento, nombre, apellido, asunto y texto.-->
-            
-                        <!--Article con texto-->
+                            <div class="layer-bg">
+                            </div>
+                              <div class="video-bg">
+                                <video src="../Video/background.mp4" loop muted autoplay height="100%"></video>
+                             </div>
 
-                        <Article class="Article-contactos1">    
-                            <p class="P">Puedes contactar con nosotros para resolver tus dudas, quejas o darnos tu opinion sobre el trato que has recibido por parte de nuestros empleados.</p>
-                            <p class="P"><span>Aviso:</span>En un futuro tambien estaremos tomando curriculums para nuestra empresa por la misma pagina de contactos</p>
-                        </Article>
-                                              <!--Incio del cuestionario-->
-                            <Article class="Article-contactos2">
-                            <form action="" method="get" enctype="multipart/form-data">
-                                <fieldset>
-                                    <legend>Contactenos</legend>
+                             <div class="img-bg">
+                              <img class="img-fluid" src="../Image/background/background.jpg" alt="Fondo">
+                          </div>
+                 
+                             <!-- Nav -->
+
+                             <nav class="navbar navbar-expand-lg nav-link">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="../Index.html"><img src="../Image/Logo.png" alt="Logo" class="Logo-pages"></a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="../pages/Inicio.html">Inicio</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="../pages/Horarios.html">Horarios</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="../pages/acerca-de-nosotros.html">Acerca de nosotros</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
                 
-                                            <!--Departamento donde vive-->
+                
+                <!-- Titulo con parrafos -->
+                
+                <section class="col-12">
+                    <Article class="Text Article-contactos1 col-xs-8">    
+                        <h1 class="Sub-Titles Text-center">Contactenos</h1>
+                        <p class="P Text-center">Puedes contactar con nosotros para resolver tus dudas, quejas o darnos tu opinion sobre el trato que has recibido por parte de nuestros empleados.</p>
+                        <p class="P Text-center"><span>Aviso:</span>En un futuro tambien estaremos tomando curriculums para nuestra empresa por la misma pagina de contactos</p>
+                    </Article>
+                                          <!--Incio del cuestionario-->
+                        <Article class="Article-contactos2">
+                        <form action="" method="get" enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Contactenos</legend>
+            
+                                        <!--Departamento donde vive-->
 
-                                    <label for="departamento"></label>
-                                    <select name="departamento" id="departamento">
-                                    <option value="artigas">Artigas</option>
-                                    <option value="canelones">Canelones</option>
-                                    <option value="cerro-Largo">Cerro Largo</option>
-                                    <option value="colonia">Colonia</option>
-                                    <option value="durazno">Durazno</option>
-                                    <option value="flores">Flores</option>
-                                    <option value="florida">Florida</option>
-                                    <option value="lavalleja">Lavalleja</option>
-                                    <option value="maldonado">Maldonado</option>
-                                    <option value="montevideo">Montevideo</option>
-                                    <option value="paysandu">Paysandú</option>
-                                    <option value="rio-negro">Rio Negro</option>
-                                    <option value="rivera">Rivera</option>
-                                    <option value="rocha">Rocha</option>
-                                    <option value="salto">Salto</option>
-                                    <option value="san-jose">San José</option>
-                                    <option value="soriano">Soriano</option>
-                                    <option value="tacuarembo">Tacuaremb{o</option>
-                                    <option value="treinta-y-tres">Treinta Y Tres</option>
+
+                            <div class="mb-3">
+                                <label for="departamento"></label>
+                                <select name="departamento" id="departamento">
+                                <option value="artigas">Artigas</option>
+                                <option value="canelones">Canelones</option>
+                                <option value="cerro-Largo">Cerro Largo</option>
+                                <option value="colonia">Colonia</option>
+                                <option value="durazno">Durazno</option>
+                                <option value="flores">Flores</option>
+                                <option value="florida">Florida</option>
+                                <option value="lavalleja">Lavalleja</option>
+                                <option value="maldonado">Maldonado</option>
+                                <option value="montevideo">Montevideo</option>
+                                <option value="paysandu">Paysandú</option>
+                                <option value="rio-negro">Rio Negro</option>
+                                <option value="rivera">Rivera</option>
+                                <option value="rocha">Rocha</option>
+                                <option value="salto">Salto</option>
+                                <option value="san-jose">San José</option>
+                                <option value="soriano">Soriano</option>
+                                <option value="tacuarembo">Tacuaremb{o</option>
+                                <option value="treinta-y-tres">Treinta Y Tres</option>
+                            </select>
+                        </div>
+                                                <!---Nombre y apellido-->
+                                     <div class="mb-3 col-md-6">
+                                         <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                        <input type="Text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+                                      </div>
+
+                                            <!--Asunto del texto-->
+            
+                                <label for="asunto"></label>
+                                <select name="asunto" id="asunto">
+                                    <option value="opiniones">Opiniones</option>
+                                    <option value="quejas">Quejas</option>
+                                    <option value="otros">Otros</option>
+                                    <option value="dudas">Dudas</option>
                                 </select>
-                                                    <!---Nombre y apellido-->
-                                    <label for="nombres"></label>
-                                    <input type="text" name="nombres" placeholder="Nombres">
-                
-                                    <label for="apellidos"></label>
-                                    <input type="text" name="apellidos" placeholder="Apellidos">
-                
-                                    <label for="correo"></label>
-                                    <input type="correo" name="correo" placeholder="Introdusca su correo electronico">
-                
-                                                <!--Asunto del texto-->
-                
-                                    <label for="asunto"></label>
-                                    <select name="asunto" id="asunto">
-                                        <option value="opiniones">Opiniones</option>
-                                        <option value="quejas">Quejas</option>
-                                        <option value="otros">Otros</option>
-                                        <option value="dudas">Dudas</option>
-                                    </select>
-                                
-                                                <!--Caja de texto-->
-                                    <label for="caja-de-texto"></label>   
-                                    <textarea name="caja-de-texto" id="caja-de-texto" cols="60" rows="10" placeholder="Escriba aqui lo que necesite comunicar a la empresa" class="Caja-de-texto"></textarea>
-                
-                                                <!--Boton de enviar-->
-                                    <input type="submit" name="enviar" value="Enviar">
-                
-                                </fieldset>
-                            </form>
-                        </Article>
+                            
+                                            <!--Caja de texto-->
+            
+                            </fieldset>
+                        </form>
+                        <div class="mb-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+                                           <!--Boton de enviar-->
+                          <input type="submit" name="enviar" value="Enviar">
+                    </Article>
+
                 </section>
-            
-                <aside>
-            
-            
-                </aside>
-            </div>
-                <footer class="Footer">
-                    <p>Pagina para Proyecto CoderHouse 2022</p>
-                </footer>
-            </body>
+                
+                
+                <!-- Footer -->
+                
+                    <footer class="Footer Footer-pages">
+                        <p class="Text">Pagina para Proyecto CoderHouse 2022</p>
+                    </footer>
+                <script src="../js/bootstrap.min.js"></script>
+                </body>
     </html>

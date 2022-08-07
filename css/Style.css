@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+.btn:hover {
+    position: relative;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: background-color, color;
+    -o-transition-duration: 1s;
+    background-color:white;
+    color:black;
+    -moz-box-shadow: 2px 2px 1px black;
+  }
+
 
 body{
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
@@ -11,12 +25,26 @@ body{
     background-attachment: fixed;
     }
 
+.body-pages{
+    padding-bottom: 5%;
+}
+
 .Text, .Titles{
     color: white;
 }
 
+
+.Text-center{
+    text-align: center;
+}
+
 .Titles{
     font: 400% bold;
+}
+
+.Sub-Titles{
+    font-size: 150%;
+    text-align: center;
 }
 
 .layer-bg{
@@ -34,10 +62,57 @@ body{
     opacity: 0.3;
 }
 
+.img-bg{
+    z-index: -2;
+    position: fixed;
+    background-image: url(Image/background/background.jpg);
+    width: 100vw;
+    image-resolution: auto;
+    filter: blur(2px);
+    opacity: 0.3;
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    border-bottom: #FFBE33 4px solid;
+    background-color: #2B0245;
+    text-align: center;
+}
+
+.nav-link{
+    color: #FFBE33;
+    font: bold;
+}
+
+
+.Logo-pages{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.P{
+    text-align: justify;
+}
+
+.carousel{
+    display: flex;
+    margin: 5% 0 2% 0;
+    justify-content: center;
+    border-top: #FFBE33 2px solid;
+    border-bottom: #FFBE33 2px solid;
+}
+
+section{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+}
 
 .Footer{
     background-color: black;
-    opacity: 0.7;
     border-top:rgb(254, 185, 63) 4px solid;
     position: fixed;
     bottom: 0;
@@ -124,58 +199,80 @@ body{
     color: #FFBE33;
 }
 
-    /*Inicio*/
+    /*Horarios*/
 
-    .body-inicio{
-        height: 100vh;
-        width: 100vw;
+    .Table{
+        border: #FFBE33 1px solid;
         justify-content: center;
-        grid-template-rows: 1fr 2fr ;
-        background-color: transparent;
-        margin-bottom: 10%;
     }
 
+    .Title-Horarios{
+        text-align: center;
+    }
 
-    .navbar{
+    .button{
         display: flex;
-        flex-direction: column;
-        border-bottom: #FFBE33 4px solid;
+        justify-content: center;
+    }
+
+    .btn{
+        align-items: center;
+    }
+
+    .Button-color{
         background-color: #2B0245;
     }
 
-    .nav-link{
-        color: #FFBE33;
-        font: bold;
+    .Button-color:hover{
+        background-color: #FFBE33;
     }
 
-    .Logo-pages{
-        border-radius: 50%;
-        width: 100px;
-    }
 
-    .P{
-        text-align: justify;
-    }
 
-    .carousel{
+    /*ADN*/
+
+    .map{
         display: flex;
-        margin: 5% 0 2% 0;
         justify-content: center;
-        border-top: #FFBE33 2px solid;
-        border-bottom: #FFBE33 2px solid;
-    }
-    
-    section{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 15%;
     }
 
+    @media screen and (max-width: 374px) {
 
-@media screen (min-width: 480px) {
+        .Cost{
+            display: none;
+        }
 
-}
+        .xs-Cost{
+            display: flex;
+            background-color: #212529;
+            margin: 1%;
+            text-align: center;
+            border: #FFBE33 2px solid;
+            justify-content: center;
 
-@media screen (min-width: 767px){
+        }
 
-}
+      }
+
+      @media screen and (min-width: 374px) {
+
+        .xs-Cost{
+            display: none;
+        }
+
+      }
+
+      @media screen and (max-width: 1699px) {
+
+        .img-bg{
+            display: none;
+        }
+
+      }
+
+      @media screen and (min-width: 1700px) {
+
+        .video-bg{
+            display: none;
+        }
+      }
