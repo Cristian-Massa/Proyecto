@@ -213,8 +213,6 @@ section{
         background-color: #FFBE33;
     }
 
-
-
     /*ADN*/
 
     .map{
@@ -248,7 +246,7 @@ section{
 
       }
 
-      @media screen and (max-width: 1699px) {
+      @media screen and (max-width: 1550px) {
 
         .img-bg{
             display: none;
@@ -256,9 +254,13 @@ section{
 
       }
 
-      @media screen and (min-width: 1700px) {
+      @media screen and (min-width: 1550px) {
 
         .video-bg{
             display: none;
+        }
+
+        .img-bg{
+            display: block;
         }
       }
