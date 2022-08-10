@@ -1,0 +1,254 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+$primary-color:#FFBE33;
+$secundary-color:#2B0245;
+  
+  body {
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .body-pages {
+    padding-bottom: 5%;
+  }
+  
+  .Text, .Titles {
+    color: white;
+  }
+  
+  .Text-center {
+    text-align: center;
+  }
+  
+  .Titles {
+    font: 400% bold;
+  }
+  
+  .Sub-Titles {
+    font-size: 150%;
+    text-align: center;
+  }
+  
+  .layer-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-bg {
+    z-index: -2;
+    position: fixed;
+    height: 100%;
+    filter: blur(2px);
+    opacity: 0.3;
+  }
+  
+  .img-bg {
+    z-index: -2;
+    position: fixed;
+    background-image: url(Image/background/background.jpg);
+    width: 100vw;
+    image-resolution: auto;
+    filter: blur(2px);
+    opacity: 0.3;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #FFBE33 4px solid;
+    background-color: #2B0245;
+    text-align: center;
+  }
+  
+  .nav-link {
+    color: #FFBE33;
+    font: bold;
+  }
+  
+  .Logo-pages {
+    border-radius: 50%;
+    width: 100px;
+  }
+  
+  .P {
+    text-align: justify;
+  }
+  
+  .carousel {
+    display: flex;
+    margin: 5% 0 2% 0;
+    justify-content: center;
+    border-top: #FFBE33 2px solid;
+    border-bottom: #FFBE33 2px solid;
+  }
+  
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+  }
+  
+  .Footer {
+    background-color: black;
+    border-top: rgb(254, 185, 63) 4px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .Footer-pages {
+    padding: 3%;
+  }
+  
+  /*Index*/
+  .body-index {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    grid-template-rows: 1fr 2fr;
+    background-color: transparent;
+
+    .header-index {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .Logo {
+            border-radius: 50%;
+            border: rgb(254, 185, 63) 4px solid;
+          }
+      }
+  }
+
+  
+  .container {
+    width: 100vw;
+    justify-content: stretch;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 25% 25% 35% 10%;
+  }
+  
+  .Title-index, .Slogan-index, .Nav-index, .Footer {
+    text-align: center;
+  }
+  
+  .Text-index {
+    font: bold 300%;
+  }
+  
+  .Nav-index Nav ul li {
+    list-style-type: none;
+    margin: 1%;
+  }
+
+  .Nav-index{
+    .Boton1-index {
+        padding: 1% 5% 1% 5%;
+      }
+      
+      .Boton2-index {
+        padding: 1% 6% 1% 6%;
+      }
+      
+      .Boton3-index {
+        padding: 1% 7% 1% 7%;
+      }
+
+      .Boton-index {
+        border-radius: 15%;
+        background-color: transparent;
+        border: solid 4px #FFBE33;
+        font: bold;
+        color: white;
+    
+        &:hover{
+            border: solid 4px $secundary-color;
+            color: $secundary-color;
+            background-color: rgba(128, 128, 128, 0.356);
+        }
+
+          }
+  }
+  
+
+  
+  .acerca-de-nosotros-index {
+    text-decoration: none;
+    color: #FFBE33;
+  }
+  
+  /*Horarios*/
+  .Table {
+    border: #FFBE33 1px solid;
+    justify-content: center;
+  }
+  
+  .Title-Horarios {
+    text-align: center;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    align-items: center;
+  }
+  
+  .Button-color {
+    background-color: #2B0245;
+  }
+  
+  .Button-color:hover {
+    background-color: #FFBE33;
+  }
+  
+  /*ADN*/
+  .map {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 374px) {
+    .Cost {
+      display: none;
+    }
+    .xs-Cost {
+      display: flex;
+      background-color: #212529;
+      margin: 1%;
+      text-align: center;
+      border: #FFBE33 2px solid;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 374px) {
+    .xs-Cost {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1550px) {
+    .img-bg {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1550px) {
+    .video-bg {
+      display: none;
+    }
+    .img-bg {
+      display: block;
+    }
+  }

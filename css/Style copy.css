@@ -114,13 +114,15 @@ section {
   grid-template-rows: 1fr 2fr;
   background-color: transparent;
 }
-.body-index .header-index {
+
+.header-index {
   margin-top: 5%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.body-index .header-index .Logo {
+
+.Logo {
   border-radius: 50%;
   border: rgb(254, 185, 63) 4px solid;
 }
@@ -146,26 +148,30 @@ section {
   margin: 1%;
 }
 
-.Nav-index .Boton1-index {
-  padding: 1% 5% 1% 5%;
-}
-.Nav-index .Boton2-index {
-  padding: 1% 6% 1% 6%;
-}
-.Nav-index .Boton3-index {
-  padding: 1% 7% 1% 7%;
-}
-.Nav-index .Boton-index {
+.Boton-index {
   border-radius: 15%;
   background-color: transparent;
   border: solid 4px #FFBE33;
   font: bold;
   color: white;
 }
-.Nav-index .Boton-index:hover {
-  border: solid 4px #2B0245;
-  color: #2B0245;
+
+.Boton-index:hover {
+  border: solid 4px #784BA0;
+  color: #784BA0;
   background-color: rgba(128, 128, 128, 0.356);
+}
+
+.Boton1-index {
+  padding: 1% 5% 1% 5%;
+}
+
+.Boton2-index {
+  padding: 1% 6% 1% 6%;
+}
+
+.Boton3-index {
+  padding: 1% 7% 1% 7%;
 }
 
 .acerca-de-nosotros-index {
@@ -236,4 +242,4 @@ section {
   .img-bg {
     display: block;
   }
-}/*# sourceMappingURL=Style.css.map */
+}
