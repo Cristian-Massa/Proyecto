@@ -96,14 +96,16 @@ $secundary-color:#2B0245;
   }
   
   .Footer {
+    position: fixed;
     background-color: black;
     border-top: rgb(254, 185, 63) 4px solid;
-    position: fixed;
+    opacity: 0.9;
     bottom: 0;
     left: 0;
     right: 0;
   }
   
+
   .Footer-pages {
     padding: 3%;
   }

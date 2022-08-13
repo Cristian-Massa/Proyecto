@@ -193,10 +193,50 @@
 
           </article>
 
+<button class="btn btn-success buy" data-bs-toggle="modal" data-bs-target="#window-modal">
+  Compra tu boleto
+</button>
 
-        <div class="button">
-          <button class="btn btn-primary btn-lg Button-color col-xs-5 col-lg-3" type="submit">Reservar pasaje</button>
+<div class="modal" id="window-modal" tabindex="1" role="article" aria-labelledby="title-window" aria-hidden="true">
+  <div class="modal-dialog" role="article">
+  
+    <div class="modal-content">
+      <div class="modal-header">
+          <h3 id="title-window">Compra tu boleto</h3>
+          <button data-dismiss="modal" aria-label="Cerrar" aria-hidden="true"> cerrar</button>
         </div>
+        
+        <div class="modal-body ">
+          <p>Origen:</p>
+          <label for="Origen"></label>
+          <select name="Origen" id="Origen">
+              <option value="Montevideo">Montevideo</option>
+              <option value="Boca-del-cufre">Boca del cufre</option>
+              <option value="Kiyu">Kiyú</option>
+          </select>
+
+          <p>Destino:</p>
+          <label for="Destino"></label>
+          <select name="Destino" id="Destino">
+              <option value="Montevideo">Montevideo</option>
+              <option value="Boca-del-cufre">Boca del cufre</option>
+              <option value="Kiyu">Kiyú</option>
+          </select>
+        </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+        <button class="btn btn-warning" type="button" data-dismiss="modal">
+          cerrar
+        </button>
+        <button class="btn btn-success" type="button">
+          aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
         </section>
 
