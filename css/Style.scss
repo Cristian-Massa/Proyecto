@@ -4,9 +4,24 @@
     padding: 0;
   }
 
+@mixin container-index {
+  width: 100vw;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 25% 25% 35% 10%;
+}
+
 $primary-color:#FFBE33;
 $secundary-color:#2B0245;
-  
+
+$Texts:(
+  Titles: 400% Bold white,
+  Text: white,
+  Sub-title: 150% center,
+);
+
+
   body {
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     background-repeat: no-repeat;
@@ -17,23 +32,28 @@ $secundary-color:#2B0245;
     padding-bottom: 5%;
   }
   
-  .Text, .Titles {
-    color: white;
-  }
   
-  .Text-center {
-    text-align: center;
-  }
-  
-  .Titles {
-    font: 400% bold;
-  }
-  
-  .Sub-Titles {
-    font-size: 150%;
-    text-align: center;
-  }
-  
+    $Titles: map-get($Texts, Titles);
+
+    .Titles{
+      Font:$Titles
+    }
+
+    $Sub-Titles: map-get($Texts, Sub-title);
+
+    .Sub-Titles {
+      font: $Sub-Titles;
+    }
+
+    .Text-center {
+      text-align: center;
+    }
+
+    .Text {
+      color: white;
+    }
+
+
   .layer-bg {
     position: absolute;
     z-index: -1;
@@ -134,11 +154,7 @@ $secundary-color:#2B0245;
 
   
   .container {
-    width: 100vw;
-    justify-content: stretch;
-    align-items: center;
-    display: grid;
-    grid-template-rows: 25% 25% 35% 10%;
+    @include container-index;
   }
   
   .Title-index, .Slogan-index, .Nav-index, .Footer {
@@ -198,11 +214,14 @@ $secundary-color:#2B0245;
   
   .Title-Horarios {
     text-align: center;
+    @extend .Text;
   }
   
   .button {
     display: flex;
     justify-content: center;
+    @extend .Text;
+
   }
   
   .btn {

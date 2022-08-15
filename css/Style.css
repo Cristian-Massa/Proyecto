@@ -14,21 +14,20 @@ body {
   padding-bottom: 5%;
 }
 
-.Text, .Titles {
-  color: white;
+.Titles {
+  Font: 400% Bold white;
+}
+
+.Sub-Titles {
+  font: 150% center;
 }
 
 .Text-center {
   text-align: center;
 }
 
-.Titles {
-  font: 400% bold;
-}
-
-.Sub-Titles {
-  font-size: 150%;
-  text-align: center;
+.Text, .button, .Title-Horarios {
+  color: white;
 }
 
 .layer-bg {
