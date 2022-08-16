@@ -53,6 +53,22 @@ $Texts:(
       color: white;
     }
 
+    .Title-inicio{
+      margin-bottom: 30px;
+      @extend .Text-center;
+      color: $primary-color;
+    }
+
+    .bg-title{
+      display: flex;
+      justify-content: center;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom: $primary-color 4px solid;
+      border-right: $primary-color 4px solid;
+      border-left: $primary-color 4px solid;
+      background-color: $secundary-color;
+    }
 
   .layer-bg {
     position: absolute;

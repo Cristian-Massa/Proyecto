@@ -22,12 +22,28 @@ body {
   font: 150% center;
 }
 
-.Text-center {
+.Text-center, .Title-inicio {
   text-align: center;
 }
 
 .Text, .button, .Title-Horarios {
   color: white;
+}
+
+.Title-inicio {
+  margin-bottom: 30px;
+  color: #FFBE33;
+}
+
+.bg-title {
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom: #FFBE33 4px solid;
+  border-right: #FFBE33 4px solid;
+  border-left: #FFBE33 4px solid;
+  background-color: #2B0245;
 }
 
 .layer-bg {
