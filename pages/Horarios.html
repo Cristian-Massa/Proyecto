@@ -24,6 +24,20 @@
               <img class="img-fluid" src="../Image/background/background.jpg" alt="Fondo">
           </div>
 
+                    <!--Animacion-->
+          <div class="center">
+            <img src="../Image/Logo.png" alt="No se pudo cargar logo" class="Logo-animation">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+          </div>
 
           <!--Header con nav y logo-->
  <header>
@@ -131,14 +145,14 @@
                   <td class="Cost">$350</td>
                 </tr>
               </tbody>
-              <thead class="Table">
-                <tr>
-                  <th scope="col">Horarios</th>
-                  <th scope="col">Origen</th>
-                  <th scope="col">Destino</th>
-                  <th scope="col" class="Cost">Coste</th>
-                </tr>
               </table>
+
+
+                <thead class="Table xs-Cost">
+                  <tr>
+                    <th scope="col" class="Cost"></th>
+                  </tr>
+
 
               <div class="xs-Cost table-dark"><p>Coste $350</p></div>
 
@@ -198,10 +212,14 @@
             <div class="xs-Cost table-dark"><p>Coste $450</p></div>
 
           </article>
+
+
           <!--btn de compra-->
+
 <button class="btn Button-color button col-12" data-bs-toggle="modal" data-bs-target="#window-modal">
   Compra tu boleto
 </button>
+
           <!--menu de compra (seguir en js)-->
 <div class="modal" id="window-modal" tabindex="1" role="article" aria-labelledby="title-window" aria-hidden="true">
   <div class="modal-dialog" role="article">
@@ -213,7 +231,7 @@
       </div>
          
       <div class="modal-body ">
-           <!--<p>Origen:</p>
+           <p>Origen:</p>
           <label for="Origen"></label>
           <select name="Origen" id="Origen">
               <option value="Montevideo">Montevideo</option>
@@ -229,18 +247,22 @@
               <option value="Kiyu">Kiyú</option>
           </select>
           
+          <div class="Btn-section">
           <button class="btn btn-warning" type="button" data-dismiss="modal">
             cerrar
           </button>
           <button class="btn btn-success" type="button">
             aceptar
-          </button>-->
+          </button>
+        </div>
      </div>
     </div>
   </div>
 </div>
 </div>
 </div>
+
+
 
         </section>
 

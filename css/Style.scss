@@ -12,6 +12,96 @@
   grid-template-rows: 25% 25% 35% 10%;
 }
 
+
+// /////////////////////////////////////////// animacion cargando
+
+
+.Logo-animation{
+  position: fixed;
+  top: 100px;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2B0245;
+  
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, #FFBE33, #fff);
+  margin: 10px;
+  animation: wave 1s linear 2s;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.center{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  animation-name: center;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes center{
+  0%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden
+  }
+}
+
+// /////////////////////////////////////////// animacion cargando
+
 $primary-color:#FFBE33;
 $secundary-color:#2B0245;
 
@@ -78,7 +168,7 @@ $Texts:(
   }
   
   .video-bg {
-    z-index: -2;
+    z-index: -3;
     position: fixed;
     height: 100%;
     filter: blur(2px);
@@ -86,7 +176,7 @@ $Texts:(
   }
   
   .img-bg {
-    z-index: -2;
+    z-index: -3;
     position: fixed;
     background-image: url(Image/background/background.jpg);
     width: 100vw;
@@ -98,13 +188,13 @@ $Texts:(
   .navbar {
     display: flex;
     flex-direction: column;
-    border-bottom: #FFBE33 4px solid;
-    background-color: #2B0245;
+    border-bottom: $primary-color 4px solid;
+    background-color: $secundary-color;
     text-align: center;
   }
   
   .nav-link {
-    color: #FFBE33;
+    color: $primary-color;
     font: bold;
   }
   
@@ -121,8 +211,12 @@ $Texts:(
     display: flex;
     margin: 5% 0 2% 0;
     justify-content: center;
-    border-top: #FFBE33 2px solid;
-    border-bottom: #FFBE33 2px solid;
+    border-top: $primary-color 2px solid;
+    border-bottom: $primary-color 2px solid;
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    z-index: 0;
   }
   
   section {
@@ -134,7 +228,7 @@ $Texts:(
   .Footer {
     position: fixed;
     background-color: black;
-    border-top: rgb(254, 185, 63) 4px solid;
+    border-top: $primary-color 4px solid;
     opacity: 0.9;
     bottom: 0;
     left: 0;
@@ -163,7 +257,7 @@ $Texts:(
 
         .Logo {
             border-radius: 50%;
-            border: rgb(254, 185, 63) 4px solid;
+            border: $primary-color 4px solid;
           }
       }
   }
@@ -202,7 +296,7 @@ $Texts:(
       .Boton-index {
         border-radius: 15%;
         background-color: transparent;
-        border: solid 4px #FFBE33;
+        border: solid 4px $primary-color;
         font: bold;
         color: white;
     
@@ -219,12 +313,12 @@ $Texts:(
   
   .acerca-de-nosotros-index {
     text-decoration: none;
-    color: #FFBE33;
+    color: $primary-color;
   }
   
   /*Horarios*/
   .Table {
-    border: #FFBE33 1px solid;
+    border: $primary-color 1px solid;
     justify-content: center;
   }
   
@@ -243,13 +337,20 @@ $Texts:(
   .btn {
     align-items: center;
   }
+
+  .Btn-section{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 5px;
+    margin-top: 20px;
+  }
   
   .Button-color {
-    background-color: #2B0245;
+    background-color: $secundary-color;
   }
   
   .Button-color:hover {
-    background-color: #FFBE33;
+    background-color: $primary-color;
   }
   
   /*ADN*/
@@ -267,7 +368,7 @@ $Texts:(
       background-color: #212529;
       margin: 1%;
       text-align: center;
-      border: #FFBE33 2px solid;
+      border: $primary-color 2px solid;
       justify-content: center;
     }
   }
